@@ -8,23 +8,6 @@
 	<link rel="stylesheet" href="css.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="bootstrap.css">
-	
-	<script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '448767003812881');
-      fbq('track', 'PageView');
-    </script>
-<noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=448767003812881&ev=PageView&noscript=1"
-    /></noscript>
-	
 </head>
 <body>
 		<img class="logo" src="img/logo.png">
@@ -36,13 +19,13 @@
 		<!--Form Top-->
 		<div class="login-box">
 		  <h2>Receba seu E-book</h2>
-		  <form action="https://api.sheetmonkey.io/form/5HieyX6naUxynGQ17ukmwU" method="post">
+		  	<form action="https://api.sheetmonkey.io/form/5HieyX6naUxynGQ17ukmwU" method="post">
 		    <div class="user-box">
 		      <input type="text" name="Nome" required>
 		      <label>Nome</label>
 		    </div>
 		    <div class="user-box">
-		      <input type="number" name="Telefone" minlength="10" maxlength="11" required>
+		      <input type="tel" name="Telefone" pattern="[0-9]{11}" required>
 		      <label>Telefone com (DDD)</label>
 		    </div>
 		    <input type="hidden" name="Data de envio" value="x-sheetmonkey-current-date-time" />
@@ -62,7 +45,5 @@
 			<p>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas e resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Sinta-se à vontade para falar conosco em horário comercial de Segunda a Sextas das 09h00 às 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</p>
 		</div>
 	</footer>
-
-
 </body>
 </html>
