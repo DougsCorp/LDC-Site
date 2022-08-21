@@ -9,7 +9,6 @@ body {
   background-color: #F7F7F7;
   text-align: center;
   width: 800px;
-  di
 }
 
 .logo {
@@ -20,13 +19,13 @@ body {
 
 .headline{
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 250px auto;
   padding-top: 15px;
 }
 
 .login-box {
-  position: absolute;
-  top: 900px;
+  position: relative;
+  /*top: 900px;*/
   left: 50%;
   width: 540px;
   padding: 40px;
@@ -194,7 +193,7 @@ body {
 
 footer div{
   background-color: #8C8C8C;
-  margin-top: 650px;
+  /*margin-top: 650px;*/
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -229,12 +228,13 @@ footer p{
 
   .headline {
     width: 100%;
+    margin-bottom: 250px;
   }
 
   .login-box{
     width: 90%;
     font-size: 15px;
-    top: 740px;
+    /*top: 740px;*/
   }
 
   .login-box .user-box input{
