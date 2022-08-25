@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<title>Verificando</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<style type="text/css">
+
+		html {
+  height: 100%;
+}
+body {
+  margin:0 auto;
+  padding:0;
+  font-family: 'Raleway', sans-serif;
+  /*color: #4a4949;*/
+  background-color: #F7F7F7;
+  text-align: center;
+  width: 800px;
+}
+
+.logo {
+  width: 160px;
+  margin-top: 15px;
+
+}
+
+.headline{
+  display: block;
+  margin: 0 auto 20px auto;
+  padding-top: 15px;
+}
+
+.login-box {
+  position: relative;
+  /*top: 900px;*/
+  left: 50%;
+  width: 540px;
+  padding: 40px;
+  transform: translate(-50%, 0%);
+  /*background: rgba(0,0,0,.5);*/
+  background-color: #0D1F07;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+		
+		#contBarra {
+  width:100%;
+  height:100px;
+  position: relative;
+  margin: 10% auto auto auto;
+}
+
+#progressbar{
+  height: 26px;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  background: #E0E0E0;
+  border-radius: 4px;
+  margin-top: 10px;
+  /*margin-left:20px;*/
+  padding: 2px;
+  
+}
+#loading{
+  transition: all 500ms ease;
+  height: 20px;
+  width: calc(100% - 10px);
+  border-radius: 2px;
+  background: #58c00d;
+  position: absolute;
+  left: 0%;
+  margin: 3px;
+  display: inline-block;
+  animation: load 10s ease infinite;
+}
+#load{
+  font-family: 'Lato', sans-serif;
+  font-weight: regular;
+  text-align: center;
+  margin-top: 35px;
+  color: #fff;
+}
+
+#title{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: -100px;
+  color: white;
+}
+
+@keyframes load{
+  0%{ width: 0%;}
+  10%{ width: 10%;}
+}
+
+.login-box .h2-a{
+	color: #fff;
+}
+
+.login-box .h2-b{
+	color: #58c00d;
+}
+
+.login-box .hide {
+	display: none;
+}
+
+.correios {
+  width: 300px;
+  margin: 30px 0px 150px 0px;
+}
+
+@media screen and (max-width: 800px){
+
+  body {
+    width: 90%;
+  }
+
+  .logo {
+      width: 180px;
+      /*margin: 10px;*/
+  }
+
+  .headline {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .login-box{
+    width: 90%;
+    font-size: 15px;
+    /*top: 740px;*/
+  }
+
+  .correios {
+    width: 80%;
+    margin: 30px 0 150px 0;
+  }
+
+}
+
+</style>
+
+</head>
+<body onload="barra()">
+	<img class="logo" src="img/pote-topo.png">
+	<img class="headline" src="titulo.png">
+	<div id="form" class="login-box">
+	  <h2 class="h2-a"id="primeiro" >Verificando<br>...</h2>
+	  <h2 class="h2-b hide" id="segundo"> Lift Detox Caps<br>Disponível !</h2>
+	  <div id="contBarra">
+      <div id="progressbar">
+       <span id="loading"></span>
+      <div id="load" class="troca">Consultando ESTOQUE...</div>
+      <!-- <div id="title">Um momento</div> -->
+      </div>          
+    </div>
+	</div>
+	<img class="correios" src="img/correios.png">
+
+	<script type="text/javascript">
+		function barra() {
+	      setTimeout(TextoUm, 3000);
+	      setTimeout(TextoDois, 5000);
+	      setTimeout(troca, 5000);
+	      setInterval(redirect, 8000);
+	    }
+
+	    function redirect() {
+	    	console.log("Cheguei;");
+	        //location.href = "https://siteliftdetox.fun/LiftDetoxCaps/"
+	    }
+
+	    function TextoUm(){
+	      document.getElementById("load").innerHTML = "Consultando CORREIOS...";
+	    }
+
+	    function TextoDois(){
+	      document.getElementById("load").innerHTML = "DISPONIVEL !!";
+	    }
+
+	    function troca() {
+	      document.getElementById("primeiro").classList.add("hide")
+	      document.getElementById("segundo").classList.remove("hide")
+	    };
+	</script>
+</body>
+</html>
