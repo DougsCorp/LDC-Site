@@ -12,8 +12,8 @@ body {
 }
 
 .logo {
-  width: 160px;
-  margin-top: 15px;
+  width: 135px;
+  margin-top: 50px;
 
 }
 
@@ -31,9 +31,12 @@ body {
   padding: 40px;
   transform: translate(-50%, 0%);
   /*background: rgba(0,0,0,.5);*/
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #0D1F07;
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  box-shadow: 0 5px 25px rgba(0,0,0,.6);
   border-radius: 10px;
 }
 
@@ -43,6 +46,8 @@ body {
   color: #fff;
   text-align: center;
   height: 78px;
+  text-shadow: 0px 0px 10px #0e0e0ea1;
+}
 }
 
 .login-box .user-box {
@@ -82,16 +87,16 @@ body {
 .login-box form a{
   position: relative;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 22px 30px;
   color: #05FF05;
-  font-size: 16px;
+  font-size: 19px;
   text-decoration: none;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   overflow: hidden;
   transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px;
-  background-color: #0D1F07;
+  /*margin-top: 40px;*/
+  /*letter-spacing: 4px;*/
+  background-color: #009929;
   border: none;
   cursor: pointer;
 }
@@ -178,7 +183,7 @@ body {
 }
 
 .final {
-    margin: -220px 0px 10px 0px;
+    margin-bottom: 50px;
   }
 
 .login-box img{
@@ -222,7 +227,8 @@ footer p{
 }
 
 .login-box .h2-b{
-  color: #58c00d;
+  color: #009929;
+  text-shadow: none;
 }
 
 .hide {
@@ -288,7 +294,7 @@ footer p{
 
   .logo {
       width: 140px;
-      /*margin: 10px;*/
+      margin-top: 50px;
   }
 
   .headline {
@@ -316,7 +322,7 @@ footer p{
 
   .final {
     width: 100%;
-    margin: -220px 0px 53px 0px;
+    margin-bottom: 50px;
   }
 
   .last-a{
